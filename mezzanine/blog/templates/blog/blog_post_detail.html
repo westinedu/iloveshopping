@@ -63,5 +63,15 @@
 <a class="btn small primary share-facebook" target="_blank" href="http://facebook.com/sharer.php?u={{ request.build_absolute_uri }}&amp;t={{ blog_post.title|urlencode }}">{% trans "Share on Facebook" %}</a>
 
 {% if blog_post.allow_comments %}{% comments_for blog_post %}{% endif %}
-
+<!-- Infolinks START -->
+		<script type="text/javascript">
+		   var infolink_pid =1054805; var infolink_wsid = 1;
+		</script>
+		<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+		<script type="text/javascript" src="http://www.techpages.org/wp-content/plugins/infolinks-officlial-plugin/js/jquery.js"></script><script type="text/javascript">
+							jQuery(document).ready(function(){ 
+							jQuery('.description').before('<span><!--INFOLINKS_OFF--></span>');jQuery('.description').after('<span><!--INFOLINKS_ON--></span>');jQuery('#headerimg').before('<span><!--INFOLINKS_OFF--></span>');jQuery('#headerimg').after('<span><!--INFOLINKS_ON--></span>');jQuery('h1').before('<span><!--INFOLINKS_OFF--></span>');jQuery('h1').after('<span><!--INFOLINKS_ON--></span>');jQuery('h1').before('<span><!--INFOLINKS_OFF--></span>');jQuery('h1').after('<span><!--INFOLINKS_ON--></span>');	
+								});
+						</script>
+		<!-- Infolinks END -->
 {% endblock %}
